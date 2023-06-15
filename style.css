@@ -295,7 +295,7 @@ a {
 }  
 
 
-/*MEDIA QUERY PRO PC POCITACc*/
+/*MEDIA QUERY PRO PC POCITAC*/
 
 @media screen and (min-width: 1024px) {
 
@@ -327,7 +327,9 @@ a {
 
 .Obsah {
         border: 1px solid lightgray;
-        margin: -60px 100px 0 100px;            
+        margin: -60px 100px 0 100px;      
+        width: 1000px;  /*T*/    
+        margin: auto; /*T*/
     }
 
 
@@ -338,27 +340,34 @@ a {
     }
 
     .menu_odkazy {
-        display: flex;
+       /* display: flex;*/
         flex: 1 0 20%;   
-        align-items: left;             
+       /* align-items: left; */
+              
+                
     }
     
     .menu {
         flex-direction: column;
-        align-content: flex-start; 
-
-         }
+        /*align-content: left;*/
+        justify-content: center; 
+                 }
   
     ul li {
        flex: 0 1 calc(100% / 4);
        border-top: 1px solid lightgray;
        border-bottom: 1px solid lightgrey;
+       padding-bottom: 15px; 
+        
+       
           }
 
     li  {
         width: 100%;
         text-align: left;
         border-bottom: 5px solid #c2d6d4; /*nefunguje*/
+      
+        
     }
       
 
@@ -366,11 +375,11 @@ a {
 
     .Uvod {
         padding: 20px 20px 0 50px;
+                   
     }
-
-
+    
     img {
-        position: relative;
+       position: relative;
         width: 100%;
         
     }
@@ -379,12 +388,12 @@ a {
     .popisek_obsah {
         position: absolute;
         color: white;
-        bottom: 200px;
-        right: 50px;
+        bottom: 20px;
+        right: 10px;
           }
 
     a {
-        color: purple;
+        color: rgb(238, 231, 238);
     }
 
 
